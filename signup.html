@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Danish</title>
+    <script src="https://kit.fontawesome.com/d77d081e58.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ibarra+Real+Nova&family=Mochiy+Pop+One&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    
+    html{
+        width: 1000px;
+        height: 1000px;
+        background-color: rgb(0, 0, 0) ;
+        overflow: hidden;
+    }
+
+    .main::before{
+        background: url('https://images.unsplash.com/photo-1485758152456-1e91810337e0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8YmxhY2t8fHx8fHwxNjU4NTE1MzEx&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600');
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+    }
+    .main{
+       
+        position: relative;
+        top: -209px;
+        left: 610px;
+        width: 55vw;
+        height: 120vh;
+        background-color:crimson;
+        /* rgb(48, 17, 17)  main idea*/
+    }
+    .welcome_back{
+        color: gold;
+    /* border: solid white 1px; */
+    width: 430px;
+    height: 123px;
+    position: absolute;
+    top: 276px;
+    left: 291px;
+    font-size:95px;
+    font-family: 'Raleway', sans-serif;
+    }
+    .header img {
+        width: 128px;
+        height: 50px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .main_box{
+        width: 609px;
+        height: 611px;
+        /* background-image:linear-gradient(to bottom left,coral,sandybrown); */
+        background-image: linear-gradient(to top right,rgb(207, 138, 138),rgb(81, 140, 81));
+        position: relative;
+        top: -885px;
+        left: 140px;
+        border-radius: 7px;
+    }
+    .info1{
+        color: palegoldenrod;
+
+        position: absolute;
+        top: 119px;
+    left: 51px;
+        /* border: solid wheat 1px ; */
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .info2{
+        color: palegoldenrod;
+        position: absolute;
+        top: 148px;
+    left: 145px;
+        /* border: solid wheat 1px ; */
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .info3{
+        color: black;
+        font-size: 70px;
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+        position: absolute;
+        top: 10px;
+        left: 184px;
+    }
+    .info4{
+        color: rgb(46, 40, 40);
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    position: absolute;
+    top: 109px;
+    left: 170px;
+    }
+    .google i{
+        font-size: 35px;
+        /* text-shadow: 0 0 0 1px #000; */
+        /* border: 1px solid black; */
+        /* border-radius: 100%; */
+        position: absolute;
+        top: 140px;
+        left: 150px;
+        /* background-color: aliceblue; */
+        color: rgb(42, 41, 41);
+        cursor: pointer;
+
+    }
+    .twitter i{
+        cursor: pointer;
+
+        font-size: 35px;
+        /* text-shadow: 0 0 0 1px #000; */
+        /* border: 1px solid black; */
+        /* border-radius: 100%; */
+        position: absolute;
+        top: 140px;
+        left: 250px;
+        /* background-color: aliceblue; */
+        color: rgb(114, 114, 204);
+    }
+    .facebook i{
+        cursor: pointer;
+        font-size: 35px;
+        /* text-shadow: 0 0 0 1px #000; */
+        /* border: 1px solid black; */
+        /* border-radius: 100%; */
+        position: absolute;
+        top: 140px;
+        left: 350px;
+        /* background-color: aliceblue; */
+        color: rgb(61, 61, 234);
+    }
+    .line{
+        position: absolute;
+        border: solid whitesmoke 1px;
+        border-radius: 19%;
+        top: 160px;
+        width: 607px;
+    }
+    .or{
+        font-family: 'Baloo Bhai 2', cursive;
+    font-size: 21px;
+    padding: 0px 11px;
+    /* border: solid wheat 1px; */
+    background-color: tomato;
+    position: absolute;
+    top: 198px;
+    left: 258px;
+    }
+    .input .text{
+        border-color: tomato;
+
+    font-family: 'Baloo Bhai 2', cursive;
+        font-size: 22px;
+        border-radius: 15px;
+        background-color: aqua;
+        position:absolute;
+        top: 298px;
+    left: 141px;
+    width: 315px;
+    }
+    .input .password{
+        border-color: tomato;
+    font-family: 'Baloo Bhai 2',cursive;
+        font-size: 22px;
+        border-radius: 15px;
+        background-color: aqua;
+        position:absolute;
+        top: 350px;
+        left: 141px;
+        width: 315px;
+    }
+    .btn_sign{
+        text-align: center;
+        width: 206px;
+        line-height: 38px;
+    height: 38px;
+    font-size: large;
+    
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 415px;
+    left: 140px;
+    /* border: 1px solid red; */
+    
+    border-radius: 15px;
+    background-color: rgb(111, 97, 177);
+    }
+    .btn_sign  a{
+        
+        color:blanchedalmond ;
+        text-decoration: none;
+display: block;
+    }
+    .btn_sign:hover{
+        background-color: rgba(111, 97, 177,0.8);
+    }
+    .close{
+        /* background-color: red; */
+        border-radius: 50%;
+        position: absolute;
+        top: -34px;
+    left: -70px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+    .close a i{
+        display: block;
+        line-height: 30px;
+        color: black;
+        /* font-weight: 400; */
+        font-size: 25px;
+    }
+    .close a{
+        text-decoration: none;
+    }
+    .close:hover{
+        background-color:rgba(0, 0, 0, 0.2);
+    }
+    .acc{
+        position: absolute;
+        top: 580px;
+    left: 180px;
+        font-size: 19px;
+
+    }
+    .acc a{
+        font-family: 'Raleway', sans-serif;
+
+        color: rgba(49, 7, 92, 9.823);
+        text-decoration: none;
+    }
+    .acc a:hover{
+        color: rgba(49, 7, 92, 1);
+        text-underline-position: under;
+        text-decoration: underline;
+    }
+    #path{
+        /* filter: invert(100%); */
+        position: relative;
+        top: 82px;
+    left: -116px;
+    }
+    /* full form */
+    #first_name{
+        width: 176px;
+    height: 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 185px;
+    left: 35px;
+    }
+    #first_name::placeholder ,#last_name::placeholder ,#user::placeholder,#pass::placeholder,#pass_c::placeholder{
+        font-size: 19px;
+        color:rgba(0, 0, 0, 0.683);
+    }
+    #first_name,#last_name,#user,#pass,#pass_c{background-color: lightseagreen; font-size: 18px;}
+    #last_name{
+        width: 176px;
+    height: 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 185px;
+    left: 244px;
+    }
+    #user{
+        width: 386px;
+    height: 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 254px;
+    left: 33px;
+    }
+    #pass{
+        width: 179px;
+    height: 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 323px;
+    left: 33px;
+    }
+    #pass_c{
+        width: 179px;
+    height: 40px;
+    border-radius: 8px;
+    position: absolute;
+    top: 323px;
+    left: 242px;
+    }
+    .input{
+        position: relative;
+        left: 78px;
+        top: 40px;
+    }
+    .input #first_name:focus, .input #last_name:focus, .input #user:focus,  .input #pass:focus ,  .input #pass_c:focus{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="header"><img src="logo(danish).png" alt="logo"></div>
+       
+        <div class="main"> <div class="welcome_back">Welcome</span>
+            <div class="info1">Create new account to view the path to us.</div>
+            <div class="info2">It is free and always be!</div>
+            <img id="path" src="image-removebg-preview (1).png" alt="path">
+        </div></div>
+        <div class="main_box">
+            <div class="info3">Sign Up</div>
+            <div class="info4">To continue access to pages.</div>
+            <!-- <div class="google"><i class="fa-brands fa-google-plus-g"></i></div>
+            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div class="facebook"><i class="fa-brands fa-facebook"></i></div> -->
+            <div class="line"></div>
+            <!-- <div class="or">OR</div> -->
+            <div class="input">
+                <!-- <input class="text" type="text" placeholder="Email"><br>
+                <input class="password" type="password" placeholder="Password"> -->
+                <input type="text" placeholder="First name" id="first_name">
+                <input type="text" placeholder="Last name" id="last_name">
+                <input type="text" placeholder="Username" id="user">
+                <input type="password" placeholder="Password" id="pass">
+                <input type="password" placeholder="Confirm" id="pass_c">
+                <div class="btn_sign"><a href="start.html">Sign Up</a></div>
+                <!-- <div class="btn_cancel"><a href="start.html">Cancel</a></div> -->
+                <div class="close"><a href="start.html"><i class="fa-solid fa-xmark"></i></a></div>
+            </div>
+            <div class="acc">Already a member?   <a href="signin.html">Sign In</a></div>
+        </div>
+</body>
+</html>
